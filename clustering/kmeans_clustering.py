@@ -4,6 +4,8 @@ class KMeans:
     def __init__(self, k=3, max_iter=200):
         self.k = k
         self.max_iter = max_iter
+        self.clusters = {}
+        self.centroids = {}
 
     def get_distance(self, p1, p2):
         # https://stackoverflow.com/questions/5228383/how-do-i-find-the-distance-between-two-points
@@ -11,9 +13,6 @@ class KMeans:
         return math.hypot( p2[0] - p1[0], p2[1] - p1[1] )
 
     def fit(self, data):
-        self.centroids = {}
-        self.clusters = {}
-
         # intializing centroids
         for i in range(self.k):
             self.centroids[i] = data[i]
@@ -23,7 +22,7 @@ class KMeans:
             # refreshing the dictionary of clusters after each iteration
             for i in range(self.k):
                 self.clusters[i] = []
-
+            
             for p in data:
                 # calculating the distance between coordinate and the centroid
                 # and the adding the minimum one in the cluster
@@ -38,8 +37,8 @@ class KMeans:
             print('#'*8)
 
             for c in self.clusters:
-                avg_x = sum([p[0] for p in self.clusters[c]]) / len(self.clusters[c])
-                avg_y = sum([p[1] for p in self.clusters[c]]) / len(self.clusters[c])
+                avg_x = sum( p[0] for p in self.clusters[c] ) / len(self.clusters[c])
+                avg_y = sum( p[1] for p in self.clusters[c] ) / len(self.clusters[c])
                 self.centroids[c] = (avg_x, avg_y)
 
             if self.centroids == prev_centroids:
