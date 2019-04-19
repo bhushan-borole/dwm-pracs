@@ -2,7 +2,7 @@
 
 1. Classification Algorithm(Naive Bayes)
     - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/naive_bayes)
-    - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-naive-bayes/naive_clean.py)
+    - [Vinay Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/naive_bayes/naive_bayes_csv_module.py)
   
 2. Linear Regression
     - [Rishabh Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/linear_regression.py)
