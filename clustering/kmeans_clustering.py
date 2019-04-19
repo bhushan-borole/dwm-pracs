@@ -46,10 +46,7 @@ class KMeans:
 
     def predict(self, point):
         dist = [self.get_distance(point, self.centroids[c]) for c in self.centroids]
-        self.clusters[dist.index(min(dist))].append(point)
-
-        print('Final Clusters: ', self.clusters)
-        print('Final Centroids: ', self.centroids)
+        print("The point is added in cluster: ", dist.index(min(dist)))
 
 
 if __name__ == '__main__':
