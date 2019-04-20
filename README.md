@@ -6,8 +6,9 @@
     - [Rishabh Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/naive_bayes/nb_rishabh.py)  
   
 2. Linear Regression
-    - [Rishabh Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/linear_regression)
-    - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-linear-regression/lin_reg.py)
+    - [Rishabh Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/linear_regression/rishabh)
+    - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-linear-regression/lin_reg.py)  
+    - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/linear_regression/bhushan)
 
 3. Clustering Algorithm (K means)
     - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/clustering/kmeans_clustering.py)
