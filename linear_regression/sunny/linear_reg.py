@@ -8,7 +8,7 @@ def linearRegression(x,y):
     mean=lambda val: sum(val)/len(val)
     mx,my =mean(x),mean(y)
     print("MEAN :",mx,my)
-    b1=(sum([round((xi-mx)*(yi-my),4) for xi,yi in zip(x,y)])/sum([(xi-mx)**2for xi in x]))
+    b1=(sum([round((xi-mx)*(yi-my),4) for xi,yi in zip(x,y)])/sum([(xi-mx)**2 for xi in x]))
     print("b1 :" ,b1)
     b0=my-b1*mx
     print("b0 :",b0)
