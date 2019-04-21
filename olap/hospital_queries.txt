@@ -3,7 +3,7 @@
 -- tables creation:
 create table doctor(doctor_id int primary key, dname varchar(50), dphone varchar(10), specialization varchar(20));
 create table patient(patient_id int primary key, pname varchar(50), pphone varchar(10), pgender char(1));
-create table time(time_id int primary key, year int(4), month int(2), day int(2));
+create table time(time_id int primary key, year int, month int, day int);
 create table fact_table(doctor_id int, patient_id int, time_id int, charges int, count int, constraint pk_fact_table primary key(doctor_id, patient_id, time_id));
 
 -- data insertion:
