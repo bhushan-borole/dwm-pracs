@@ -19,6 +19,7 @@
 4. Association Rule Mining (Apriori)
    - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/apriori)
    - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-apriori-algorithm/apriori_new.py)
+   - [Rishabh Python](https://github.com/RishabhBhatnagar/TE/blob/master/dwm/apriori/associate_rule_mining.py)
 
 5. Page Rank
    - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/pagerank)
