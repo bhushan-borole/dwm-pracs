@@ -58,3 +58,31 @@ insert into store_fact_table values(2, 1, 2, 5, 20000);
 insert into store_fact_table values(1, 3, 1, 2, 9500);
 
 
+-- 1. Cube Operation
+select product_id, store_id, promo_id, avg(sales)
+from store_fact_table
+group by cube(product_id, store_id, promo_id);
+
+-- 2. Slice Operation 
+select product_id, store_id, promo_id, avg(sales)
+from store_fact_table
+where product_id = 1
+group by cube(product_id, store_id, promo_id);
+
+-- 3. Dice Operation
+select product_id, store_id, promo_id, avg(sales)
+from store_fact_table
+where product_id = 1
+    and store_id = 1
+group by cube(product_id, store_id, promo_id);
+
+-- 4. Rollup Operation
+select product_id, sum(sales)
+from store_fact_table
+group by rollup(product_id);
+
+-- 5. Rank Operation
+select product_id, store_id, sales,
+       rank() over(order by sales) as rank,
+       dense_rank() over(order by sales) as dense_rank
+from store_fact_table order by rank asc;
