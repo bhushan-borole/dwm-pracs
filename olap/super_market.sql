@@ -16,6 +16,7 @@ create table store_fact_table(
     store_id int, 
     promo_id int, 
     time_id int, 
+    sales int,
     foreign key(product_id) references product_dim(product_id),
     foreign key(store_id) references store_dim(store_id),
     foreign key(promo_id) references promotion_dim(promo_id),
@@ -38,21 +39,22 @@ insert into time_dim values(5, 2019, 5, 5);
 
 insert into store_dim values(1, 'NYC', 'USA');
 insert into store_dim values(2, 'Mumbai', 'India');
+insert into store_dim values(3, 'Chennai', 'India');
 
 insert into promotion_dim values(1, 'NYC', 'USA', 5000);
 insert into promotion_dim values(2, 'Mumbai', 'India', 4000);
-insert into promotion_dim values(2, 'Chennai', 'India', 9000);
+insert into promotion_dim values(3, 'Chennai', 'India', 9000);
 
-insert into store_fact_table values(1, 1, 1, 1);
-insert into store_fact_table values(2, 2, 1, 3);
-insert into store_fact_table values(1, 3, 1, 4);
-insert into store_fact_table values(2, 3, 1, 5);
-insert into store_fact_table values(1, 2, 2, 3);
-insert into store_fact_table values(1, 3, 2, 4);
-insert into store_fact_table values(2, 1, 2, 3);
-insert into store_fact_table values(1, 1, 3, 2);
-insert into store_fact_table values(1, 2, 3, 4);
-insert into store_fact_table values(2, 1, 4, 5);
-insert into store_fact_table values(1, 3, 5, 2);
+insert into store_fact_table values(1, 1, 1, 1, 9000);
+insert into store_fact_table values(2, 2, 1, 3, 8000);
+insert into store_fact_table values(1, 3, 1, 4, 10500);
+insert into store_fact_table values(2, 3, 1, 5, 15000);
+insert into store_fact_table values(1, 2, 2, 3, 7000);
+insert into store_fact_table values(1, 3, 2, 4, 8000);
+insert into store_fact_table values(2, 1, 2, 3, 10000);
+insert into store_fact_table values(1, 1, 3, 2, 7000);
+insert into store_fact_table values(1, 2, 3, 4, 50000);
+insert into store_fact_table values(2, 1, 2, 5, 20000);
+insert into store_fact_table values(1, 3, 1, 2, 9500);
 
 
