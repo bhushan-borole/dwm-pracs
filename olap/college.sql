@@ -47,3 +47,13 @@ insert into college_fact_table values(1, 4, 2, 50);
 insert into college_fact_table values(2, 3, 4, 70);
 insert into college_fact_table values(4, 5, 1, 85);
 insert into college_fact_table values(3, 4, 5, 70);
+
+-- 1. Cube Operation
+select time_id, course_id, student_id, avg(marks)  
+from college_fact_table
+group by cube(time_id, course_id, student_id);
+
+-- 2. Rollup Operation
+select student_id, sum(marks)  
+from college_fact_table
+group by rollup(student_id);
