@@ -35,7 +35,7 @@ def confidence(rule):
 def apriori(data, min_sup=MIN_SUPPORT_COUNT, min_conf=MIN_CONFIDENCE):
     d = [item for sublist in data for item in sublist]
     freq = OrderedDict(Counter(d).items())
-    comb = 1
+    comb = 2
     while True:
         c = {}
         for perm in itertools.combinations(freq.keys(), comb):
