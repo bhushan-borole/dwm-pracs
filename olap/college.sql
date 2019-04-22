@@ -57,3 +57,21 @@ group by cube(time_id, course_id, student_id);
 select student_id, sum(marks)  
 from college_fact_table
 group by rollup(student_id);
+
+-- 3. Slice Operation
+select time_id, course_id, student_id, avg(marks)  
+from college_fact_table
+where course_id = 1
+group by cube(time_id, course_id, student_id);
+
+-- 4. Dice Operation
+select time_id, course_id, student_id, avg(marks)  
+from college_fact_table
+where course_id = 1
+    and student_id = 1
+group by cube(time_id, course_id, student_id);
+
+-- 5. Rank Operation
+select student_id, course_id, marks,
+       rank() over(order by marks) as rank
+from college_fact_table order by rank asc;
