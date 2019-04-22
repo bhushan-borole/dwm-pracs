@@ -23,3 +23,4 @@
 5. Page Rank
    - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/pagerank)
    - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-page-rank/page_rank.py)
+   - [Rishabh Python](https://github.com/RishabhBhatnagar/TE/blob/master/dwm/pagerank/pagerank.py)
