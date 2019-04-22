@@ -9,6 +9,7 @@
     - [Rishabh Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/linear_regression/rishabh)
     - [Vinay Python](https://github.com/vinay-deshmukh/DWM_Codes/blob/master/dwm-linear-regression/lin_reg.py)  
     - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/tree/master/linear_regression/bhushan)
+    - [Sunny Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/linear_regression/sunny/linear_reg.py)
 
 3. Clustering Algorithm (K means)
     - [Bhushan Python](https://github.com/bhushan-borole/dwm-pracs/blob/master/clustering/kmeans_clustering.py)
